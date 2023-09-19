@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="30dp"
+    tools:context=".AddMahasiswaActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIM"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/txt_nim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan NIM"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/txt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan Nama Lengkap"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Lahir"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/editText_tglLahir"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan Tanggal Lahir"
+        android:inputType="date"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textSize="20sp"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <RadioButton
+            android:id="@+id/radioButtonLaki"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Laki - Laki"
+            android:layout_marginRight="20dp"
+            android:enabled="false"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonPerempuan"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Perempuan"
+            android:enabled="false"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/txt_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan Alamat"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"/>
+
+</LinearLayout>
